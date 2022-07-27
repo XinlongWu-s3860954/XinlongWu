@@ -1,0 +1,36 @@
+# resume_section_interest
+- item: 
+  summary: As mentioned above, I have a great interest in IT. Therefore I am willing to learn as much as I can about it. So my current interest in IT covers a huge range. I will explain them all below
+
+- item: 
+  title: Game
+  summary: I'm sure a lot of people are interested in IT because of the game, so am I.
+          I was a Minecraft player before and it really is a great game, you can do 
+          almost everything you want to do. If there's something it can't do, then 
+          you can develop plugins for it. That' s why I got into java and I tried to use Java
+           to develop plugins for it. And started a game server for my friends.
+          </br></br>
+          The redstone system in the Minecraft game is also a very interesting thing, 
+          it is very similar to real life circuits. Players can use redstone circuits to 
+          make all sorts of machines and even computers.I have also used the Redstone system 
+          to create the basic components of a computer in Minecraft - logic gates and registers
+
+- item:
+  title: Security
+  summary: Who wouldn't want to be a hacker. Like in The Matrix, 
+          hacking into computers and getting what you want. 
+          But before that, I need to know something about 
+          computer/information security. so I tried to understand the various attacks,
+           buffer overflow attacks, DDOS, XSS, SQL injection etc.
+
+- item:
+  title: Web Page
+  summary: I'm also interested in web design because I can easily see what I've done before, 
+          just like painting. The web can be easy to start with, but it's not as easy as we think, 
+          it can be tricky, as in this page 
+          <a target="_blank" href="https://codepen.io/fenglinger/full/zYqmWrK">https://codepen.io/fenglinger/full/zYqmWrK</a>
+          . You You can click on the card to flip it over, but it's only implemented using HTML and CSS rather than JS.
+          and I'm very happy with it.
+
+
+

@@ -48,19 +48,25 @@
 
       </header>
 
-      {% if site.resume_section_experience %}
-      <!-- begin Experience -->
+      {% if site.resume_section_interest %}
+      <!-- begin Interest in IT -->
       <section class="content-section">
 
         <header class="section-header">
-          <h2>Experience</h2>
+          <h2>Interest in IT</h2>
         </header>
 
-        {% for job in site.data.experience %}
+        {% for it in site.data.interest %}
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
-          <h4 class="resume-item-details" itemprop="description">{{ job.position }} &bull; {{ job.duration }}</h4>
-          <p class="resume-item-copy">{{ job.summary }}</p>
+          {% if it.title %}
+          <h3 class="resume-item-title" itemprop="name">{{ it.title }}</h3>
+          {% endif %}
+          {% if it.subtitle %}
+          <h4 class="resume-item-details" itemprop="description">{{ it.subtitle }}</h4>
+          {% endif %}
+          {% if it.summary %}
+          <p class="resume-item-copy">{{ it.summary }}</p>
+          {% endif %}
         </div><!-- end of resume-item -->
         {% endfor %}
 
