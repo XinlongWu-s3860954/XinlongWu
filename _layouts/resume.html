@@ -71,35 +71,31 @@
         {% endfor %}
 
       </section>
-      <!-- end Experience -->
+      <!-- end Interest in IT -->
       {% endif %}
 
 
-      {% if site.resume_section_education %}
-      <!-- begin Education -->
+      {% if site.resume_section_ideal_job %}
+      <!-- begin Ideal Job -->
       <section class="content-section">
         <header class="section-header">
-          <h2>Education</h2>
+          <h2>Ideal Job</h2>
         </header>
 
-        {% for education in site.data.education %}
+        {% for job_i in site.data.ideal_job %}
         <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
-          <h3 class="resume-item-title" itemprop="name">{{ education.uni }}</h3>
-          <h4 class="resume-item-details group" itemprop="description">{{ education.degree }} &bull; {{ education.year }}</h4>
-          <h5 class="resume-item-details award-title" itemprop="description">{{ education.award }}</h5>
-          <p class="resume-item-copy" itemprop="description">
-            <ul class="resume-item-list">
-              {% for award in education.awards %}
-              <li>{{ award.award }}</li>
-              {% endfor %}
-            </ul>
-
-
-          <p class="resume-item-copy">{{ education.summary }}</p>
+          <h3 class="resume-item-title" itemprop="name">{{ job_i.job }}</h3>
+          <h4 class="resume-item-details group" itemprop="description">{{ job_i.company }} &bull; {{ job_i.location }}</h4>
+          <h5 class="resume-item-details award-title" itemprop="description">{{ job_i.award }}</h5>
+          <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+            {% if job_i.summary %}
+            <p class="resume-item-copy">{{ job_i.summary }}</p>
+            {% endif %}
+          </div><!-- end of resume-item -->
         </div>
         {% endfor %}
       </section>
-      <!-- end Education -->
+      <!-- end Ideal Job -->
       {% endif %}
 
 
